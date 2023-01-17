@@ -1,0 +1,64 @@
+{
+	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/master/packages/%40wordpress/blocks/src/api/schema.json",
+	"apiVersion": 2,
+	"name": "pstgb/post-grid",
+	"version": "0.1.0",
+	"title": "Post Grid",
+	"category": "pstgb-blocks",
+	"description": "Shows posts in grid layout",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"uniqueId": {
+			"type": "string"
+		},
+		"gridStyle": {
+			"type": "string",
+			"default": "normal"
+		},
+		"categories": {
+			"type": "array",
+			"items": {
+				"type": "object"
+			}
+		},
+		"numberOfPosts": {
+			"type": "number",
+			"default": 3
+		},
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		},
+		"gridCols": {
+			"type": "object",
+			"default": {
+				"desktop": 3,
+				"tablet": 2,
+				"mobile": 1
+			}
+		},
+		"gridGaps": {
+			"type": "object",
+			"default": {
+				"desktop": 30,
+				"tablet": 20,
+				"mobile": 20
+			}
+		},
+		"contentBg": {
+			"type": "string",
+			"default": "#ffffff"
+		}
+	},
+	"textdomain": "post-grid-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,46 @@
+// Size Box Control
+.pstgb__sizebox {
+	margin-bottom: 24px;
+	.panel_label {
+		margin: 0 0 10px;
+	}
+	.pstgb__panel_head.flex {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+
+	.pstgb__devices {
+		display: flex;
+		align-items: center;
+	}
+
+	.pstgb__device {
+		background: none;
+		border: none;
+		margin: 0;
+		padding: 0;
+		cursor: pointer;
+	}
+
+	.pstgb__device.middle_device {
+		margin: 0 2px;
+	}
+
+	.pstgb__device svg {
+		width: 15px;
+		height: 10px;
+		fill: #d4d5ff;
+	}
+
+	.pstgb__device.active svg {
+		fill: #79abc9;
+	}
+
+	.pstgb__items .dashicon.dashicons {
+		font-size: 16px;
+		line-height: 20px;
+		color: #79abc9;
+	}
+}

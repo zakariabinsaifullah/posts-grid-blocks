@@ -1,0 +1,59 @@
+/* Color Pallete */
+.pstgb__color_picker {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin: 16px 0;
+
+	.pstgb__color_picker_label {
+		margin: 0;
+		flex-grow: 1;
+	}
+
+	.pstgb__reset_color span.dashicon {
+		font-size: 14px;
+		margin-right: 5px;
+		line-height: 20px;
+		cursor: pointer;
+	}
+
+	.pstgb__color_indicator {
+		width: 25px;
+		height: 25px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		position: relative;
+	}
+
+	.pstgb__color_indicator span.component-color-indicator {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: linear-gradient(45deg, #ddd 25%, transparent 0),
+			linear-gradient(-45deg, #ddd 25%, transparent 0),
+			linear-gradient(45deg, transparent 75%, #ddd 0),
+			linear-gradient(-45deg, transparent 75%, #ddd 0);
+		background-size: 10px 10px;
+		background-position: 0 0, 0 5px, 5px -5px, -5px 0;
+	}
+
+	.pstgb__color_picker .components-base-control {
+		padding: 0 16px;
+	}
+}
+.pstgb__color_picker_inner .pstgb__color_picker_clear {
+	box-sizing: border-box;
+	margin: 0 15px 15px;
+	background: #a71818;
+	border: none;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+}
